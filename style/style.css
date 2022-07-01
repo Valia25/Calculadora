@@ -1,0 +1,72 @@
+body {
+    background-color: beige;
+}
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+html {
+    font-family: 'Georama', sans-serif;
+    font-size: 85%;
+}
+.botonRojo{
+    background-color: red !important;
+    color: rgb(246, 238, 238);
+    font-weight: 800;
+}
+.stylecalculadora{
+    width: 400px !important;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+}
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    width: 400px !important;
+    font-size: 5rem;
+    border: 1px solid gray;
+}
+.calculadora-display {
+    padding: 25px 25px;
+    width: 100%;
+    text-align: right;
+    border: 2px solid gray;
+    overflow-x: auto;
+}
+.calculadora-keypad {
+    display: flex;
+    width: 100%;
+
+}
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.keypad-button {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(101, 152, 199);
+    border: 1px solid rgb(7, 2, 24);
+}
+.keypad-button:hover {
+    filter: brightness(100%);
+    transition: filter .50s;
+}
+.keypad-button.yellow {
+    background-color: rgb(47, 11, 208);
+}
+.keypad-button.large {
+    width: 50%;
+}
+.keypad-button.dark {
+    background-color: gray;
+}
